@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>search</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
         <div class="left">
             <i class="fa-solid fa-gear" style="font-size: 30px; cursor: pointer;"></i>
             <img src="aset/play_logo.png" alt="" class="logo">
-            <div class="search_content" id="searchBar">
+            <div class="search_content active">
                 <label for="search_bar" style="cursor: pointer;"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <input type="search" name="" id="search_bar" class="search_bar" placeholder="What do you want to play?">
             </div>
@@ -154,11 +154,11 @@
 
         <aside class="side_bar">
             <div class="menu">
-                <div class="icon_navbar active">
+                <div class="icon_navbar" id="homecontent">
                     <i class="fa-solid fa-house"></i>
                     <h3>Home</h3>
                 </div>
-                <div class="icon_navbar" id="search_content">
+                <div class="icon_navbar active">
                     <i class="fa-regular fa-compass"></i>
                     <h3>Explore</h3>
                 </div>
@@ -170,158 +170,130 @@
             </div>
         </aside>
 
-        <section class="home_page">
+        <section class="home_page" style="padding-bottom: 20px;">
 
             <div class="nav_btn_content">
                 <button class="nav_button" onclick="goBack()"><i class="fa-solid fa-circle-chevron-left"></i></button>
                 <button class="nav_button" onclick="goForward()"><i class="fa-solid fa-circle-chevron-right"></i></button>
             </div>
 
-            <div class="fav_container">
-                <div class="fav_wrapper">
-                    <div class="fav_box mySwiper">
-                        <div class="fav_content swiper-wrapper">
-                            <div class="fav_slide swiper-slide">
-                                <div class="img">
-                                    <img src="aset/song.jpg" alt="">
-                                </div>
-                                <div class="song_desc">
-                                    <h3>Playlist 1</h3>
-                                    <h1 class="title_song">AVANGARD</h1>
-                                    <h3><img src="aset/song.jpg" alt=""> IONOWN • 2024, 2 m 36 s</h3>
-                                </div>
-                            </div>
-                            <div class="fav_slide swiper-slide" id="doodle">
-                                <div class="img">
-                                    <img src="aset/doodle.png" alt="">
-                                </div>
-                                <div class="song_desc">
-                                    <h3>Playlist 2</h3>
-                                    <h1 class="title_song">DOODLE</h1>
-                                    <h3><img src="aset/song.jpg" alt=""> IONOWN • 2024, 2 m 36 s</h3>
-                                </div>
-                            </div>
+            <h3 style="padding: 20px; font-size: 25px;" class="test_text">Recent search</h3>
+            <div class="song_box">
+                <img src="aset/song.jpg" alt="">
+                <div class="desc_song">
+                    <h3>AVANGARD</h3>
+                    <p>IONYOS</p>
+                </div>
+                <div class="btn_close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="song_box">
+                <img src="aset/song.jpg" alt="">
+                <div class="desc_song">
+                    <h3>AVANGARD</h3>
+                    <p>IONYOS</p>
+                </div>
+                <div class="btn_close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <h3 style=" margin-top: 20px; padding: 20px; font-size: 25px;" class="test_text">Most search</h3>
+            <div class="most_box">
+                <div class="most_card">
+                    <img src="aset/song.jpg" alt="">
+                    <div class="title_song">
+                        <h3>AVANGARD</h3>
+                        <p>IONYOS</p>
+                        <div class="btn_play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="most_card">
+                    <img src="aset/song.jpg" alt="">
+                    <div class="title_song">
+                        <h3>AVANGARD</h3>
+                        <p>IONYOS</p>
+                        <div class="btn_play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="most_card">
+                    <img src="aset/song.jpg" alt="">
+                    <div class="title_song">
+                        <h3>AVANGARD</h3>
+                        <p>IONYOS</p>
+                        <div class="btn_play">
+                            <i class="fa-solid fa-play"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <nav>
-                <div class="navigasi_playlist">
-                    <h3>All</h3>
+            
+            <h3 style=" margin-top: 20px; padding: 20px; font-size: 25px;" class="test_text">Browse All</h3>
+            <div class="browse_all">
+                <div class="browse_box">
+                    
                 </div>
-                <div class="navigasi_playlist">
-                    <h3>Artist</h3>
-                </div>
-                <div class="navigasi_playlist">
-                    <h3>Music</h3>
-                </div>
-            </nav>
-            <div class="playlist_content">
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
-                    <div class="desc_playlist">
-                        <h1>PLaylist 1</h1>
-                        <p>By : Justdhif</p>
-                    </div>
-                </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
-                    <div class="desc_playlist">
-                        <h1>PLaylist 1</h1>
-                        <p>By : Justdhif</p>
-                    </div>
-                </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
-                    <div class="desc_playlist">
-                        <h1>PLaylist 1</h1>
-                        <p>By : Justdhif</p>
-                    </div>
-                </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
-                    <div class="desc_playlist">
-                        <h1>PLaylist 1</h1>
-                        <p>By : Justdhif</p>
-                    </div>
-                </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
-                    <div class="desc_playlist">
-                        <h1>PLaylist 1</h1>
-                        <p>By : Justdhif</p>
-                    </div>
-                </div>
-            </div>
+                <div class="browse_box">
 
-            <div class="title_content">
-                <h3>New Music & Song</h3>
-            </div>
-            <div class="playlist_content">
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
                 </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
+                <div class="browse_box">
+
                 </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
+                <div class="browse_box">
+
                 </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
+                <div class="browse_box">
+
                 </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
+                <div class="browse_box">
+
                 </div>
-            </div>
-            <div class="title_content">
-                <h3>New Music & Song</h3>
-            </div>
-            <div class="playlist_content">
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
+                <div class="browse_box">
+
                 </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
+                <div class="browse_box">
+
                 </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
+                <div class="browse_box">
+
                 </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
+                <div class="browse_box">
+
                 </div>
-                <div class="playlist_card">
-                    <div class="img">
-                        <img src="aset/doodle.png" alt="">
-                    </div>
+                <div class="browse_box">
+
+                </div>
+                <div class="browse_box">
+
+                </div>
+                <div class="browse_box">
+
+                </div>
+                <div class="browse_box">
+
+                </div>
+                <div class="browse_box">
+
+                </div>
+                <div class="browse_box">
+
+                </div>
+                <div class="browse_box">
+
+                </div>
+                <div class="browse_box">
+
+                </div>
+                <div class="browse_box">
+
+                </div>
+                <div class="browse_box">
+
                 </div>
             </div>
         </section>
@@ -422,7 +394,7 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
 
 </body>
 </html>
