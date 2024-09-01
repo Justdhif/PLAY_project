@@ -28,3 +28,9 @@ songBtn.addEventListener('click', () => {
         songBtn.style.color = '#fff';
     }
 })
+
+const premiumPage = document.querySelector('.premium');
+
+premiumPage.addEventListener('click', () => {
+    location.href = 'premium.html';
+})

@@ -44,8 +44,7 @@ body {
 }
 
 .header .logo {
-    width: 150px;
-    height: 40px;
+    width: 100px;
     object-fit: cover;
 }
 
