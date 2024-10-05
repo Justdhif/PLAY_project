@@ -53,9 +53,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../aset/bg.webp);
-    background-size: 150%;
-    background-position: center;
+    background: rgb(0,168,255);
+    background: linear-gradient(55deg, rgba(0,168,255,1) 0%, rgba(32,33,202,1) 32%, rgba(207,0,160,1) 57%, rgba(243,0,255,1) 100%);
 }
 
 .premium::before {

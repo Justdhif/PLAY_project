@@ -15,6 +15,18 @@ var swiper = new Swiper(".fav_box", {
     },
 });
 
+const btnOpen = document.getElementById('btnOpen');
+const btnClose = document.getElementById('btnClose');
+const sidePlaylist = document.getElementById('side_playlist');
+
+btnOpen.addEventListener('click', () => {
+    sidePlaylist.classList.add('active');
+})
+
+btnClose.addEventListener('click', () => {
+    sidePlaylist.classList.remove('active');
+})
+
 const searchContent = document.getElementById('search_content');
 const searchBar = document.getElementById('searchBar');
 
@@ -30,4 +42,10 @@ const premiumPage = document.querySelector('.premium');
 
 premiumPage.addEventListener('click', () => {
     location.href = 'premium.html';
+})
+
+const profileBtn = document.querySelector('.img_profile');
+
+profileBtn.addEventListener('click', () => {
+    location.href = 'profile.html';
 })

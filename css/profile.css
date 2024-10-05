@@ -1,0 +1,207 @@
+section {
+    background: none;
+    padding: 0;
+}
+
+.profile_content {
+    margin: 0;
+    width: 100%;
+    padding: 0 10px 0 15px;
+    height: 660px;
+}
+
+.profile_content .profile_top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 20px;
+    height: 300px;
+    padding: 20px;
+    background-image: url(../aset/beach.jpg);
+    border-radius: 10px 10px 0 0;
+}
+
+.profile_content .profile_top img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 2px #000000;
+}
+
+.profile_content .profile_top .profile_name {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.profile_content .profile_top .profile_name h1 {
+    font-size: 50px;
+}
+
+.profile_content .artist_content {
+    background: linear-gradient(to bottom, #262626, #000000);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.profile_content .artist_content .more_option {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+} 
+
+.profile_content .artist_content .more_option i {
+    position: relative;
+    font-size: 30px;
+    margin: 20px 0;
+    z-index: 50;
+}
+
+.profile_content .artist_content .more_option .option {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #203E5F;
+    border-radius: .3rem;
+    padding: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.profile_content .artist_content .more_option .option.active {
+    left: 50px;
+    opacity: 1;
+}
+
+.profile_content .artist_content .more_option .option h1 {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.profile_content .artist_content .more_option .option h1,
+.profile_content .artist_content .more_option .option h1 i {
+    font-size: 15px;
+}
+
+.profile_content .artist_content .more_option .option h1 i {
+    font-size: 17px;
+    margin: 0;
+}
+
+.artist_content .artist_box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.artist_content .artist_box .artist_card {
+    padding: 20px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.artist_content .artist_box .artist_card:hover {
+    background: #262626;
+}
+
+.artist_card .img {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.artist_card .img .btn {
+    position: absolute;
+    right: -50px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #262626;
+    color: #ffffff;
+    border-radius: 100%;
+    font-size: 20px;
+    transition: .5s ease;
+}
+
+.artist_card .img:hover .btn {
+    right: 10px;
+}
+
+.artist_card .img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 2px #000000;
+}
+
+.track_content {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.track_content .judul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track_content .song_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.track_content .song_container .song_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffffff2f;
+}
+
+.track_content .song_container .song_content .right,
+.track_content .song_container .song_content .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.track_content .song_container .song_content .left {
+    justify-content: space-between;
+    width: 200px;
+}
+
+.track_content .song_container .song_content .left a {
+    color: var(--text-color);
+    transition: .5s ease;
+}
+
+.track_content .song_container .song_content .left a:hover {
+    text-decoration: underline;
+}
